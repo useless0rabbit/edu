@@ -3,31 +3,107 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="index.css">
         <title>Super Earth NEWS</title>
     </head>   
 
     <body>
-        <div id="header">
-            <img src="/edu/img/Super_earth.png" alt="Логотип">
-            <h1>Super Earth</h1>
-            <!--<audio controls>
-                <source src="file:///D:/GIT/edu/hd2theme.mp3">
-            </audio>-->
+        <div class="wrapper">   
+            <header class="header">
+                <a href="#" class="logo">SUPER EARTH NEWS &#8482;</a>
+                <nav class="navbar">
+                    <a href="./join.html"><span class="join"> Join the Helldivers</span></a>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./gallery.html">Gallery</a>
+                </nav>
+            </header>
+            
+            <main class="main">
+                 <div class="container">
+                    <input class="inputcard" type="radio" name="slide" id="c1" checked>
+                    <label for="c1" class="card">
+                        <div class="row">
+                                <div class="description">
+                                    <video controls autoplay muted loop poster="./img/preview.png" id="video">
+                                        <source src="./video/video.mp4" type="video/mp4">
+                                    </video>
+                                    <h4>Watch the patriotic video from our publishing house:</h4>
+                                </div>
+                        </div>
+                    </label>
+                    <input class="inputcard" type="radio" name="slide" id="c2">
+                    <label for="c2" class="card">
+                        <div class="row">
+                            <div class="icon">Latest News</div>
+                                <div class="description">
+                                    <h4>Latest news from the</h4>
+                                    <h4>Super Earth Ministry of Truth:</h4>
+                                    <p>All Helldivers are ordered to make an all-out push to complete </p>
+                                    <p>destroy the Automaton Legion.</p>
+                                    <p><b>Order Overview: Liberate all Automaton-held planets.</p></b>
+                                </div>
+                        </div>
+                    </label>
+                    <input class="inputcard" type="radio" name="slide" id="c3">
+                    <label for="c3" class="card">
+                        <div class="row">
+                            <div class="alarm">!</div>
+                                <div class="description">
+                                    <h4>Important message to all Helldivers!</h4>
+                                    <p>If you think that your comrade is having thoughts that do not </p>
+                                    <p>correspond to the true vision of democracy and freedom,</p>
+                                    <b><p>immediately report this to your senior rank!</p></b>
+                                </div>
+                        </div>
+                    </label>
+                    
+                 </div>
+                 
+            </main>
+            
         </div>
-        
-        <div id="main">
-            <p>Super Earth - Our home. Prosperity, liberty and democracy - Our way of life.</p>
-            <p>But it doesn't come free: it is every man, woman and child's duty to protect our home, our culture, and our families.</p>
-            <p>Why not make the most important decision of your life; make the safety of your family a personal responsibility, and prove that you have the strength and courage</p>
-            <p>to be free?</p>
+        <div>
+            <h1 class="title">Your Pals are Fighting. Why aren't You?</h1>
         </div>
-        
-        <div id="footer">
-            <p><i>Super Earth Ministry of Truth</p></i>
-            <p><i>Please observe all the following Patriotic Service Announcements.</p></i>
-            <p><i>Deviations in attention will be considered treason.</p></i>
-            <p><i>Thank you for your cooperation.</p></i>
+        <div id="join-description">
+            <div>
+                <h4> Modern weaponry</h4>
+                <img src="./img/weaponry.png" alt="weaponry" width="350" height="250">
+                <p><b style='color: white;'>Each Helldiver</b> receives ownership of a <b style='color: white;'>state-of-the-art superdestroyer</b>, equipped with the latest technologies from the <i>Super Earth Weapons Research Institute.</i></p>
+                <p>Iconic <b style='color: white;'>Hellpods</b> transport troops comfortably and <b style='color: white;'>safely</b> to the planet's surface.</p>
+                <p><b style='color: white;'>A wide variety of weapons</b> for the effective and, most importantly, <b style='color: white;'>safe</b> extermination of enemies of democracy is at your <b style='color: white;'>unlimited access!</b></p>
+                
+            </div>
+            <div>
+                <h4> Support </h4>
+                <img src="./img/support.jpg" alt="support" width="350" height="250">
+                <p>Your super destroyers will receive <b style='color: white;'>endless</b> information support directly from <b style='color: white;'>Super Earth.</b></p>
+                <p>Our broadcasts will provide you with <b style='color: white;'>cutting-edge information</b> from the front and inform you about new discoveries.</p>
+                <p>In the most difficult situations (which practically never arise), you can <b style='color: white;'>always</b> contact us or your comrades.</p>
+                <p><b style='color: white;'>You will never be alone in hostile space!</b></p>
+            </div>
+            <div>
+                <h4> Become a Hero!</h4>
+                <img src="./img/hero.jpg" alt="support" width="450" height="250">
+                <p>And finally, remember <b style='color: white;'>what we are fighting for!</b></p>
+                <p>While our freedom is threatened throughout the galaxy by alien scum, <b style='color: white;'>you and your family will not be able to live in peace!</b></p>
+                <p><b style='color: white;'></b>You</b> can personally put an end to this threat and return home with honors, where all doors <b style='color: white;'></b>will be open for you!</b></p>
+                <p><b style='color: white;'>Become a Hero!</b></p>
+                <p><b style='color: white;'>Become... a Legend!</b></p>
+            </div>
+        </div> 
+        <div>
+            <a href="./join.html"><button class="button" >FILL OUT THE FORM AND JOIN</button></a>
         </div>
+        <footer class="footer">
+            <p>Super Earth Ministry of Truth</p>
+            <p>Please observe all the following Patriotic Service Announcements.</p>
+            <p>Deviations in attention will be considered treason.</p>
+            <p>Thank you for your cooperation.</p>
+        </footer>
     </body>
 
 </html>
